@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:text-center">
+            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">About us</p>
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
+            <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
+            <div class="relative px-8">
+                <img src="{% static 'images/info/img1.webp' %}">
+            </div>
+            <div class="relative px-8">
+                <dt class="text-base font-semibold leading-7 text-gray-900 pt-8">
+                    Our mission
+                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-600">To create a world where people can continue to do what they love, forever.</dd>
+            </div>
+            <div class="relative px-8">
+                <dt class="text-base font-semibold leading-7 text-gray-900 pt-8">
+                    Our vision
+                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-600">To increase the probability of achieving "The Day" for skiers and snowboarders.</dd>
+            </div>
+            <div class="relative px-8">
+                <img src="{% static 'images/info/img2.webp' %}">
+            </div>
+            <div class="relative px-8">
+                <img src="{% static 'images/info/img3.webp' %}">
+            </div>
+            <div class="relative px-8">
+                <dt class="text-base font-semibold leading-7 text-gray-900 pt-8">
+                    Our culture
+                </dt>
+                <dd class="mt-2 text-base leading-7 text-gray-600">Stimulation, Encounters, Inspiration, Friends, and Determination. We will be stimulated by encounters with our peers, have a heart to be moved, and make choices for our own future with determination.</dd>
+            </div>
+            </dl>
+        </div>
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col">
+                <div class="h-1 bg-gray-200 rounded overflow-hidden">
+                </div>
+                <div class="mx-auto max-w-2xl lg:text-center mt-24">
+                    <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Company info</p>
+                </div>
+            </div>
+        </div>
+        <ul role="list" class="divide-y divide-gray-100 mx-auto max-w-2xl lg:max-w-2xl">
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#dark" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">Company Name</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">SKIDAY</p>
+              </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#dark" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">Foundation</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">June 23rd, 2020</p>
+              </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#dark" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">CEO</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">Tatsuya Tayagaki</p>
+              </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#dark" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">Our services</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">Mobile live camera service for outdoor facilities「Mt. CAM」, <br>email service for outdoor activities「Powder Alert」</p>
+              </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#dark" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">Contact</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">info@skiday.co.jp</p>
+              </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#dark" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">Business partners</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">PRINCE HOTEL CORPORATION, Tokyu Resorts & Stay, <br> Nagano Prefecture Hakuba Village Tourism Bureau, <br> Nagano Prefecture Kotani Village Tourism Federation, <br> Futabasha Co, Hakuba Tourism Development Corporation, <br>K2 Japan K.K., Boardriders Japan K.K.,<br>  TBS Television, Inc. Tokyo Television, Inc.</p>
+              </div>
+            </li>
+            <li class="flex justify-between gap-x-6 py-5">
+              <div class="flex min-w-0 gap-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#dark" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                  </svg>
+                <div class="min-w-0 flex-auto">
+                  <p class="text-sm font-semibold leading-6 text-gray-900">Head Office</p>
+                </div>
+              </div>
+              <div class="hidden shrink-0 sm:flex sm:flex-col sm:items-end">
+                <p class="text-sm leading-6 text-gray-900">7F, 6 Ichibancho, Chiyoda-ku, Tokyo</p>
+              </div>
+            </li>
+          </ul>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
