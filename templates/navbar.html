@@ -18,6 +18,9 @@
           <a href="{% url 'home' %}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 white:text-white md:white:hover:text-blue-500 white:hover:bg-gray-700 white:hover:text-white md:white:hover:bg-transparent" aria-current="page">Home</a>
         </li>
         <li>
+          <a href="{% url 'niseko_en' %}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 white:text-white md:white:hover:text-blue-500 white:hover:bg-gray-700 white:hover:text-white md:white:hover:bg-transparent" aria-current="page">Niseko</a>
+        </li>
+        <li>
           <a href="{% url 'info' %}" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 white:text-white md:white:hover:text-blue-500 white:hover:bg-gray-700 white:hover:text-white md:white:hover:bg-transparent">About</a>
         </li>
         <li>
@@ -27,13 +30,13 @@
           <div id="dropdownNavbar" class="z-40 hidden font-normal bg-white rounded-lg shadow w-44 dark:bg-gray-700">
               <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLargeButton">
                 <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-dark">Mt.Cam</a>
+                  <a href="{% url 'mtcam' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-dark">Mt.Cam</a>
                 </li>
                 <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-dark">Powder Alert</a>
+                  <a href="{% url 'powderalert' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-dark">Powder Alert</a>
                 </li>
                 <li>
-                  <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-dark">Snow Match</a>
+                  <a href="{% url 'matching' %}" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-dark">Snow Match</a>
                 </li>
               </ul>
           </div>
