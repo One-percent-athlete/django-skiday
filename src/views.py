@@ -3,8 +3,11 @@ import datetime
 
 year = datetime.datetime.now().year
 
-def home(request):
-    return render(request, 'pages/home.html', {"year":year})
+def home_en(request):
+    return render(request, 'pages/home_en.html', {"year":year})
+
+def home_jp(request):
+    return render(request, 'pages/home_jp.html', {"year":year})
 
 def info(request):
     
