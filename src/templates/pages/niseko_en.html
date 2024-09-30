@@ -4,7 +4,7 @@
 {% block content %}
 
 
-<section style="background-image: url('/static/images/niseko/hero.webp');" class="bg-cover bg-center bg-opacity-50 bg-center bg-no-repeat bg-gray-700 bg-blend-multiply">
+<section style="background-image: url('/static/images/niseko/hero.webp');" class="bg-cover bg-center bg-opacity-50 bg-center bg-no-repeat bg-gray-700 bg-blend-multiply md:rounded-lg">
     <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 ">
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">The best way for a good POW day</h1>
         <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Get the latest update on Snow Condition & Avalanche Infomation for FREE</p>
@@ -39,7 +39,7 @@
 
 <section class="text-gray-600 body-font">
 
-    <div class="container px-5 py-24 mx-auto">
+    <div class="container px-5 pt-24 mx-auto">
       <div class="flex flex-col text-center w-full mb-20">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Start with 4 simple steps!</h1>
         
@@ -64,15 +64,34 @@
     </div>
   </section>
 
-  <section class="text-gray-600 body-font">
-    <div class="container px-5 mx-auto flex flex-wrap flex-col">
-      <div class="flex flex-col text-center w-full">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white-900">Get ready for the best riding experience!</h1>              
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">You can also register your favorite ski areas to receive push notifications. Tap the notification to see the actual snowfall with live images of the area.</p>
+  <section>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="lg:px-20 p-10 rounded-2xl bg-gray-300 flex items-center justify-between flex-col lg:flex-row">
+        <div class="block text-center mb-5 lg:text-left lg:mb-0">
+          <h2 class="font-manrope text-4xl text-gray-900 font-semibold mb-5 lg:mb-2">
+            Get ready for the best riding experience!
+          </h2>
+          <p class="text-xl text-gray-800">
+            You can also register your favorite ski areas to receive push notifications. Tap the notification to see the actual snowfall with live images of the area.
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
+  <section class="bg-white">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+        <h1 class="m-4 sm:m-12 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-3xl ">Download Now For FREE</h1>
+        <div class="flex flex-col mb-8 lg:m-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 ">
+          <a href="http://bit.ly/3Yjm8Hu" class="inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200">
+            <img class="h-20 w-auto" src="{% static 'images/niseko/google-play-img.jpg' %}">
+          </a>
+          <a href="https://apple.co/3JILjyX" class="inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200">
+            <img class="h-20 w-auto" src="{% static 'images/niseko/apple-store-img.jpg' %}">
+          </a>  
+        </div>
+    </div>
+</section>
 
 {% endblock %}
 
