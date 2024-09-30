@@ -3,22 +3,21 @@
 
 {% block content %}
 
-<section class="bg-center bg-no-repeat bg-[url('images/powderalert/powderalert.jpg')] bg-gray-700 bg-blend-multiply">
-    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Designed for Snow lovers</h1>
-        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Ski Resort Live Information App</p>
-        <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a href="#" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                Get started
-                <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
-                </svg>
+<section style="background-image: url('/static/images/niseko/hero.webp');" class="bg-cover bg-center bg-opacity-50 bg-no-repeat bg-gray-700 bg-blend-multiply">
+  <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Powder Alert</h1>
+      <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Get the latest snow information update and snowfall notification on LIVE</p>
+      <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+        <div class="flex lg:flex-row md:flex-col">
+            <a href="http://bit.ly/3Yjm8Hu" class="bg-gray-100 inline-flex p-0.5 rounded-lg items-center hover:bg-gray-200 focus:outline-none">
+              <img class="h-20 w-auto" src="{% static 'images/google-play-img.jpg' %}">
             </a>
-            <a href="#" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
-                Learn more
-            </a>  
-        </div>
+            <a href="https://apple.co/3JILjyX" class="bg-gray-100 inline-flex p-0.5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200 focus:outline-none">
+              <img class="h-20 w-auto" src="{% static 'images/apple-store-img.jpg' %}">
+            </a>
+          </div>
     </div>
+  </div>
 </section>
 
 <section class="text-gray-600 body-font">
@@ -29,19 +28,48 @@
         
       <div class="flex flex-wrap">
         <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6">
-          <img class="rounded" src="{% static 'images/powderalert/powderalert1.png' %}">
+          <img class="rounded-lg" src="{% static 'images/powderalert/powderalert1.png' %}">
         </div>
         <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6">
-          <img class="rounded" src="{% static 'images/powderalert/powderalert2.png' %}">
+          <img class="rounded-lg" src="{% static 'images/powderalert/powderalert2.png' %}">
         </div>
         <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6">
-          <img class="rounded" src="{% static 'images/powderalert/powderalert3.png' %}">
+          <img class="rounded-lg" src="{% static 'images/powderalert/powderalert3.png' %}">
         </div>
         <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6">
-          <img class="rounded" src="{% static 'images/powderalert/powderalert4.png' %}">
+          <img class="rounded-lg" src="{% static 'images/powderalert/powderalert4.png' %}">
         </div>
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="lg:px-20 p-10 rounded-2xl bg-gray-300 flex items-center justify-between flex-col lg:flex-row">
+        <div class="block text-center mb-5 lg:text-left lg:mb-0">
+          <h2 class="font-manrope text-4xl text-gray-900 font-semibold mb-5 lg:mb-2">
+            Get ready for the best riding experience!
+          </h2>
+          <p class="text-xl text-gray-800">
+            You can also register your favorite ski areas to receive push notifications. Tap the notification to see the actual snowfall with live images of the area.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+        <h1 class="m-4 sm:m-12 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-4xl lg:text-3xl ">Download Now For FREE</h1>
+        <div class="flex flex-col mb-8 lg:m-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 ">
+          <a href="http://bit.ly/3Yjm8Hu" class="inline-flex py-3 px-5 rounded-lg items-center hover:bg-gray-200">
+            <img class="h-20 w-auto" src="{% static 'images/google-play-img.jpg' %}">
+          </a>
+          <a href="https://apple.co/3JILjyX" class="inline-flex py-3 px-5 rounded-lg items-center lg:ml-4 md:ml-0 ml-4 md:mt-4 mt-0 lg:mt-0 hover:bg-gray-200">
+            <img class="h-20 w-auto" src="{% static 'images/apple-store-img.jpg' %}">
+          </a>  
+        </div>
+    </div>
+</section>
 
 {% endblock %}
