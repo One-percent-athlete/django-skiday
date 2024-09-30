@@ -2,8 +2,8 @@ from django.urls import path
 from src import views
 
 urlpatterns = [
-    path('jp/', views.home_en, name="home_en"),
-    path('en/', views.home_jp, name="home_jp"),
+    # path('jp/', views.home_en, name="home_en"),
+    path('', views.home_jp, name="home"),
     path('info/', views.info, name="info"),
     path('mtcam/', views.mtcam, name="mtcam"),
     path('powderalert/', views.powderalert, name="powderalert"),
