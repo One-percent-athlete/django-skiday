@@ -1,8 +1,9 @@
 {% load static %}
+
 <footer class="text-gray-600 body-font">
     <div class="container px-5 pt-8 pb-4 mx-auto flex items-center sm:flex-row flex-col">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-        <span class="ml-3 text-xl"><a class="navbar-brand m-0 p-0" href="#"><img src="{% static 'images/skiday_logo.png' %}"></a></span>
+        <span class="ml-3"><a class="navbar-brand m-0 p-0" href="#"><img class="h-10 w-10" src="{% static 'images/skiday_in_mountain.png' %}"></a></span>
       </a>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
         <a class="text-gray-500" href="https://www.youtube.com/c/skiday" name="youtube">
@@ -35,7 +36,7 @@
 
     <div class="w-full max-w-screen-xl mx-auto md:pb-8">
         <hr class="mb-6 rounded sm:mx-auto dark:border-gray-300 lg:mb-8" />
-        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© {% now "Y" %} <a href="{% url 'home' %}" class="hover:underline">SKIDAY</a>. All Rights Reserved.</span>
+        <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© {% now "Y" %} <a href="{% url 'home' %}" class="hover:underline"></a>All Rights Reserved.</span>
     </div>  
 
   </footer>
