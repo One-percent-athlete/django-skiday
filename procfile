@@ -1,2 +1,2 @@
-web: gonicorn src.wsgi --log-file
+web: gunicorn src.wsgi --log-file
 web: python manage.py migrate && src.wsg

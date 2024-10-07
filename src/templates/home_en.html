@@ -1,236 +1,542 @@
-{% extends 'base.html' %}
-{% load static %}
-
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 
 <section>
-    <div id="default-carousel" class="relative w-full" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-            <!-- Item 1 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{% static 'images/home/carousel1.jpg' %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                <div class="carousel-caption text-start">
-                    <h1>Why us</h1>
-                    <p>We offer you the opportunity to have the "best experience" in snow resorts.</p>
-                </div>
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{% static 'images/home/carousel2.jpg' %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                <div class="carousel-caption text-start">
-                    <h1>Why us</h1>
-                    <p>We offer you the opportunity to have the "best experience" in snow resorts.</p>
-                </div>
-            </div>
-            <!-- Item 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <img src="{% static 'images/home/carousel3.jpg' %}" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-                <div class="carousel-caption text-start">
-                    <h1>Why us</h1>
-                    <p>We offer you the opportunity to have the "best experience" in snow resorts.</p>
-                </div>
-            </div>
-            
+  <div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden md:h-96">
+      <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img
+          src="{% static 'images/home/carousel1.jpg' %}"
+          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="..."
+        />
+        <div class="carousel-caption text-start">
+          <h1>Why us</h1>
+          <p>
+            We offer you the opportunity to have the "best experience" in snow
+            resorts.
+          </p>
         </div>
-        <!-- Slider indicators -->
-        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img
+          src="{% static 'images/home/carousel2.jpg' %}"
+          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="..."
+        />
+        <div class="carousel-caption text-start">
+          <h1>Why us</h1>
+          <p>
+            We offer you the opportunity to have the "best experience" in snow
+            resorts.
+          </p>
         </div>
-        <!-- Slider controls -->
-        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
-                </svg>
-                <span class="sr-only">Previous</span>
-            </span>
-        </button>
-        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
-                </svg>
-                <span class="sr-only">Next</span>
-            </span>
-        </button>
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+        <img
+          src="{% static 'images/home/carousel3.jpg' %}"
+          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+          alt="..."
+        />
+        <div class="carousel-caption text-start">
+          <h1>Why us</h1>
+          <p>
+            We offer you the opportunity to have the "best experience" in snow
+            resorts.
+          </p>
+        </div>
+      </div>
     </div>
+    <!-- Slider indicators -->
+    <div
+      class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+    >
+      <button
+        type="button"
+        class="w-3 h-3 rounded-full"
+        aria-current="true"
+        aria-label="Slide 1"
+        data-carousel-slide-to="0"
+      ></button>
+      <button
+        type="button"
+        class="w-3 h-3 rounded-full"
+        aria-current="false"
+        aria-label="Slide 2"
+        data-carousel-slide-to="1"
+      ></button>
+      <button
+        type="button"
+        class="w-3 h-3 rounded-full"
+        aria-current="false"
+        aria-label="Slide 3"
+        data-carousel-slide-to="2"
+      ></button>
+    </div>
+    <!-- Slider controls -->
+    <button
+      type="button"
+      class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-prev
+    >
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+      >
+        <svg
+          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 1 1 5l4 4"
+          />
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button
+      type="button"
+      class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-next
+    >
+      <span
+        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+      >
+        <svg
+          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 6 10"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 9 4-4-4-4"
+          />
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
+  </div>
 
-    <div class="text-center">
-        <h5 class="text-xl text-start p-5">SKIDAY will provide a mechanism and information that will enable snow resorts and skiers/snowboarders to fully enjoy blessed natural environment, thereby revitalizing the snow industry, facilitate travel and tourism and local economies related to experiential nature learning.</h5>
-        <button class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700"><a href="{% url 'info' %}">Click To Know More...</a></button>
-    </div>
+  <div class="text-center">
+    <h5 class="text-xl text-start p-5">
+      SKIDAY will provide a mechanism and information that will enable snow
+      resorts and skiers/snowboarders to fully enjoy blessed natural
+      environment, thereby revitalizing the snow industry, facilitate travel and
+      tourism and local economies related to experiential nature learning.
+    </h5>
+    <button
+      class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700"
+    >
+      <a href="{% url 'info' %}">Click To Know More...</a>
+    </button>
+  </div>
 </section>
 
 <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col">
-        <div class="h-1 bg-gray-200 rounded overflow-hidden">
-        </div>
-        <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-            <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-3xl mb-2 sm:mb-0">Our Services</h1>
-        </div>
-        </div>
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div class="rounded-lg h-64 overflow-hidden">
-            <img alt="content" class="object-cover object-center h-full w-full" src="{% static 'images/home/powderalert.jpg' %}">
-
-            </div>
-            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Powder Alert</h2>
-            <p class="text-base leading-relaxed mt-2">Lastest snow news, Access from anywhere, Quick and easy, Snow news email delivery service for outdoor activities</p>
-            <a href="{% url 'powderalert' %}" class="text-blue-500 inline-flex items-center mt-3">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-            </a>
-        </div>
-        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div class="rounded-lg h-64 overflow-hidden">
-            <img alt="content" class="object-cover object-center h-full w-full" src="{% static 'images/home/mtcam.png' %}">
-            </div>
-            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Mt. CAM</h2>
-            <p class="text-base leading-relaxed mt-2">Wireless, Reasonable, Functional, Mobile live camera service for outdoor facilities </p>
-            <button class="btn btn-outline-light my-2 col-3" type="button"><a href="https://docsend.com/view/r55v6g2bie8tj8kx" class="nav-link">PDF</a></button>
-            <button class="btn btn-outline-light col-3" type="button"><a href="https://docsend.com/view/cpbn728mqz66nx3c" class="nav-link">Video</a></button><br>
-            <a href="{% url 'mtcam' %}" class="text-blue-500 inline-flex items-center mt-3">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-            </a>
-        </div>
-        <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-            <div class="rounded-lg h-64 overflow-hidden">
-            <img alt="content" class="object-cover object-center h-full w-full" src="{% static 'images/home/matching.jpg' %}">
-            </div>
-            <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Guide Matching</h2>
-            <p class="text-base leading-relaxed mt-2">Making friends, Fun and easy, Improving skills, Matching service for snow mountain lovers, Coming soon...</p>
-            <a href="https://matching.skiday.co.jp/" class="text-blue-500 inline-flex items-center mt-3">Learn More
-            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-            </a>
-        </div>
-        </div>
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col">
+      <div class="h-1 bg-gray-200 rounded overflow-hidden"></div>
+      <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+        <h1
+          class="sm:w-2/5 text-gray-900 font-medium title-font text-3xl mb-2 sm:mb-0"
+        >
+          Our Services
+        </h1>
+      </div>
     </div>
+    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img
+            alt="content"
+            class="object-cover object-center h-full w-full"
+            src="{% static 'images/home/powderalert.jpg' %}"
+          />
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+          Powder Alert
+        </h2>
+        <p class="text-base leading-relaxed mt-2">
+          Lastest snow news, Access from anywhere, Quick and easy, Snow news
+          email delivery service for outdoor activities
+        </p>
+        <a
+          href="{% url 'powderalert' %}"
+          class="text-blue-500 inline-flex items-center mt-3"
+          >Learn More
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img
+            alt="content"
+            class="object-cover object-center h-full w-full"
+            src="{% static 'images/home/mtcam.png' %}"
+          />
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+          Mt. CAM
+        </h2>
+        <p class="text-base leading-relaxed my-2">
+          Wireless, Reasonable, Functional, Mobile live camera service for
+          outdoor facilities
+        </p>
+        <a
+          type="button"
+          class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-6 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+          href="https://docsend.com/view/r55v6g2bie8tj8kx"
+        >
+          PDF
+        </a>
+        <a
+          type="button"
+          class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+          href="https://docsend.com/view/cpbn728mqz66nx3c"
+        >
+          Video
+        </a>
+        <br />
+        <a
+          href="{% url 'mtcam' %}"
+          class="text-blue-500 inline-flex items-center mt-3"
+          >Learn More
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img
+            alt="content"
+            class="object-cover object-center h-full w-full"
+            src="{% static 'images/home/matching.jpg' %}"
+          />
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
+          Guide Matching
+        </h2>
+        <p class="text-base leading-relaxed mt-2">
+          Making friends, Fun and easy, Improving skills, Matching service for
+          snow mountain lovers, Coming soon...
+        </p>
+        <a
+          href="https://matching.skiday.co.jp/"
+          class="text-blue-500 inline-flex items-center mt-3"
+          >Learn More
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-4 h-4 ml-2"
+            viewBox="0 0 24 24"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section class="text-gray-600 body-font">
-    <div class="container px-5 py-24 mx-auto">
-        <div class="flex flex-col">
-            <div class="h-1 bg-gray-200 rounded overflow-hidden">
-            </div>
-            <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-                <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-3xl mb-2 sm:mb-0">Features</h1>
-            </div>
-        </div>
-        <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Awards</h1>
-        </div>
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-            <div class="p-4 md:w-1/3 flex">
-                <div class="flex-grow pl-6">
-                    <img src="{% static 'images/feature/award1.webp' %}">
-                    <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Shinsyu Venture Summit</h2>
-                    <h4 class="text-lg">Grand Prix</h4>
-                    <p>Winner of the Grand Prix at Nagano Prefecture's Largest Business Presentation Contest (Sponsored by Nagano Prefecture, January 2022)</p>
-                </div>
-            </div>
-            <div class="p-4 md:w-1/3 flex">
-                <div class="flex-grow pl-6">
-                    <img src="{% static 'images/feature/award2.webp' %}">
-                    <h2 class="text-xl text-gray-900 font-medium title-font mb-2">G-CHALLENGE 2018</h2>
-                    <h4 class="text-lg">Grand Prize</h4>
-                    <p>Winner of the Grand Prize in the Business Plan Contest for current students and graduates sponsored by the Graduate School of Management, Globis University (October 2018)</p>
-                </div>
-            </div>
-            <div class="p-4 md:w-1/3 flex">
-                <div class="flex-grow pl-6">
-                    <img src="{% static 'images/feature/award3.webp' %}">
-                    <h2 class="text-xl text-gray-900 font-medium title-font mb-2">4th Hokuriku Business Plan Contest</h2>
-                    <h4 class="text-lg">Judges' Special Prize</h4>
-                    <p>Contest sponsored by Toyama Prefecture to support entrepreneurs aiming for further advancement. Applications are accepted nationwide (Toyama Prefecture & Toyama City support, April 2022)</p>
-                </div>
-            </div>
-        </div>
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col">
+      <div class="h-1 bg-gray-200 rounded overflow-hidden"></div>
+      <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+        <h1
+          class="sm:w-2/5 text-gray-900 font-medium title-font text-3xl mb-2 sm:mb-0"
+        >
+          Features
+        </h1>
+      </div>
     </div>
-    <div class="container px-5 pb-24 mx-auto">
-        <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Acceleration Program Adopted</h1>
-        </div>
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-            <div class="p-4 md:w-1/3 flex">
-                <div class="flex-grow pl-6">
-                    <img src="{% static 'images/feature/award4.webp' %}">
-                    <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Shido2020</h2>
-                    <h4 class="text-lg">Sponsored by Ministry of Economy, Trade and Industry</h4>
-                    <p>The program was adopted by the Global Entrepreneurship Development Program to foster the next generation of innovators, and we have completed the 6-month program. (2020)</p>
-                </div>
-            </div>
-            <div class="p-4 md:w-1/3 flex">
-                <div class="flex-grow pl-6">
-                    <img src="{% static 'images/feature/award5.webp' %}">
-                    <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Aoyama Startup Acceleration Center</h2>
-                    <h4 class="text-lg">Sponsored by Tokyo Metropolitan Government</h4>
-                    <p>We were selected for a facility and program to incubate early-stage startups and received support for approximately 5 months. (2020)</p>
-                </div>
-            </div>
-            <div class="p-4 md:w-1/3 flex">
-                <div class="flex-grow pl-6">
-                    <img src="{% static 'images/feature/award6.webp' %}">
-                    <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Shinshu Acceleration Program</h2>
-                    <h4 class="text-lg">Sponsored by Nagano Prefecture</h4>
-                    <p>This is a short-term intensive support program for start-up companies operating in Nagano Prefecture. Support was provided for approximately 3 months. (2021)</p>
-                </div>
-            </div>
-            <div class="p-4 md:w-1/3 flex">
-                <div class="flex-grow pl-6">
-                    <img src="{% static 'images/feature/award7.webp' %}">
-                    <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Local Innovation Challenge Hokkaido</h2>
-                    <h4 class="text-lg">Hosted by Sapporo City, Hokkaido</h4>
-                    <p>We have been selected for the Administrative Open Innovation Project, which aims to solve administrative issues in collaboration with the City of Sapporo and 12 neighboring municipalities, and have been given the opportunity to conduct a demonstration experiment. (2022)</p>
-                </div>
-            </div>
-            <div class="p-4 md:w-1/3 flex">
-                <div class="flex-grow pl-6">
-                    <img src="{% static 'images/feature/award8.webp' %}">
-                    <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Nexs Tokyo</h2>
-                    <h4 class="text-lg">Sponsored by Tokyo Metropolitan Government</h4>
-                    <p>We have been selected as a member company of a project sponsored by the Tokyo Metropolitan Government that links venture companies nationwide with people, information, and organizations working to promote innovation. (2020)</p>
-                </div>
-            </div>
-        </div>
+    <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+      <h1
+        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+      >
+        Awards
+      </h1>
     </div>
-    <div class="container px-5 pb-24 mx-auto">
-        <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Business partnership</h1>
+    <div
+      class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
+    >
+      <div class="p-4 md:w-1/3 flex">
+        <div class="flex-grow pl-6">
+          <img src="{% static 'images/feature/award1.webp' %}" />
+          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
+            Shinsyu Venture Summit
+          </h2>
+          <h4 class="text-lg">Grand Prix</h4>
+          <p>
+            Winner of the Grand Prix at Nagano Prefecture's Largest Business
+            Presentation Contest (Sponsored by Nagano Prefecture, January 2022)
+          </p>
         </div>
-        <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-            <div class="p-4 md:w-1/3 flex">
-                <div class="flex-grow pl-6">
-                    <img src="{% static 'images/feature/partner1.webp' %}">
-                    <h2 class="text-xl text-gray-900 font-medium title-font mb-2">Nagano JA Bank, Nagano Prefectural Shinren</h2>
-                    <h4 class="text-lg">Business Matching Partnership</h4>
-                    <p>We have formed an alliance to utilize the nationwide JA Bank Group network to assist us in developing our sales channels and together we will contribute to regional development. (2022)</p>
-                </div>
-            </div>
-            
+      </div>
+      <div class="p-4 md:w-1/3 flex">
+        <div class="flex-grow pl-6">
+          <img src="{% static 'images/feature/award2.webp' %}" />
+          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
+            G-CHALLENGE 2018
+          </h2>
+          <h4 class="text-lg">Grand Prize</h4>
+          <p>
+            Winner of the Grand Prize in the Business Plan Contest for current
+            students and graduates sponsored by the Graduate School of
+            Management, Globis University (October 2018)
+          </p>
         </div>
+      </div>
+      <div class="p-4 md:w-1/3 flex">
+        <div class="flex-grow pl-6">
+          <img src="{% static 'images/feature/award3.webp' %}" />
+          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
+            4th Hokuriku Business Plan Contest
+          </h2>
+          <h4 class="text-lg">Judges' Special Prize</h4>
+          <p>
+            Contest sponsored by Toyama Prefecture to support entrepreneurs
+            aiming for further advancement. Applications are accepted nationwide
+            (Toyama Prefecture & Toyama City support, April 2022)
+          </p>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="container px-5 pb-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+      <h1
+        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+      >
+        Acceleration Program Adopted
+      </h1>
+    </div>
+    <div
+      class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
+    >
+      <div class="p-4 md:w-1/3 flex">
+        <div class="flex-grow pl-6">
+          <img src="{% static 'images/feature/award4.webp' %}" />
+          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
+            Shido2020
+          </h2>
+          <h4 class="text-lg">
+            Sponsored by Ministry of Economy, Trade and Industry
+          </h4>
+          <p>
+            The program was adopted by the Global Entrepreneurship Development
+            Program to foster the next generation of innovators, and we have
+            completed the 6-month program. (2020)
+          </p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3 flex">
+        <div class="flex-grow pl-6">
+          <img src="{% static 'images/feature/award5.webp' %}" />
+          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
+            Aoyama Startup Acceleration Center
+          </h2>
+          <h4 class="text-lg">Sponsored by Tokyo Metropolitan Government</h4>
+          <p>
+            We were selected for a facility and program to incubate early-stage
+            startups and received support for approximately 5 months. (2020)
+          </p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3 flex">
+        <div class="flex-grow pl-6">
+          <img src="{% static 'images/feature/award6.webp' %}" />
+          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
+            Shinshu Acceleration Program
+          </h2>
+          <h4 class="text-lg">Sponsored by Nagano Prefecture</h4>
+          <p>
+            This is a short-term intensive support program for start-up
+            companies operating in Nagano Prefecture. Support was provided for
+            approximately 3 months. (2021)
+          </p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3 flex">
+        <div class="flex-grow pl-6">
+          <img src="{% static 'images/feature/award7.webp' %}" />
+          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
+            Local Innovation Challenge Hokkaido
+          </h2>
+          <h4 class="text-lg">Hosted by Sapporo City, Hokkaido</h4>
+          <p>
+            We have been selected for the Administrative Open Innovation
+            Project, which aims to solve administrative issues in collaboration
+            with the City of Sapporo and 12 neighboring municipalities, and have
+            been given the opportunity to conduct a demonstration experiment.
+            (2022)
+          </p>
+        </div>
+      </div>
+      <div class="p-4 md:w-1/3 flex">
+        <div class="flex-grow pl-6">
+          <img src="{% static 'images/feature/award8.webp' %}" />
+          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
+            Nexs Tokyo
+          </h2>
+          <h4 class="text-lg">Sponsored by Tokyo Metropolitan Government</h4>
+          <p>
+            We have been selected as a member company of a project sponsored by
+            the Tokyo Metropolitan Government that links venture companies
+            nationwide with people, information, and organizations working to
+            promote innovation. (2020)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container px-5 pb-24 mx-auto">
+    <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
+      <h1
+        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
+      >
+        Business partnership
+      </h1>
+    </div>
+    <div
+      class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
+    >
+      <div class="p-4 md:w-1/3 flex">
+        <div class="flex-grow pl-6">
+          <img src="{% static 'images/feature/partner1.webp' %}" />
+          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
+            Nagano JA Bank, Nagano Prefectural Shinren
+          </h2>
+          <h4 class="text-lg">Business Matching Partnership</h4>
+          <p>
+            We have formed an alliance to utilize the nationwide JA Bank Group
+            network to assist us in developing our sales channels and together
+            we will contribute to regional development. (2022)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section>
-<div class="flex flex-col">
-    <div class="h-1 bg-gray-200 rounded overflow-hidden">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col">
+      <div class="h-1 bg-gray-200 rounded overflow-hidden"></div>
+      <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+        <h1
+          class="sm:w-2/5 text-gray-900 font-medium title-font text-3xl mb-2 sm:mb-0"
+        >
+          Contact us
+        </h1>
+      </div>
     </div>
-    <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-        <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-3xl mb-2 sm:mb-0">Contact Us</h1>
-    </div>
-</div>
+  </div>
+  <section class="text-gray-600 body-font relative">
+    <div class="container px-5 pb-24 mx-auto">
+      <div class="lg:w-2/3 md:w-full mx-auto">
+        <div class="flex flex-wrap -m-2">
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="name" class="leading-7 text-sm text-gray-600"
+                >Name*</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+          </div>
 
-{% include 'contact.html' %}
+          <div class="p-2 w-1/2">
+            <div class="relative">
+              <label for="email" class="leading-7 text-sm text-gray-600"
+                >Email*</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+          </div>
+
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="company" class="leading-7 text-sm text-gray-600"
+                >Company</label
+              >
+              <input
+                type="text"
+                id="company"
+                name="company"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+          </div>
+
+          <div class="p-2 w-full">
+            <div class="relative">
+              <label for="message" class="leading-7 text-sm text-gray-600"
+                >Message*</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              ></textarea>
+            </div>
+          </div>
+          <div class="p-2 w-full">
+            <button
+              class="flex mx-auto text-white bg-slate-900 border-0 py-2 px-8 focus:outline-none hover:bg-slate-700 rounded-lg text-lg"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </section>
 
 {% endblock %}

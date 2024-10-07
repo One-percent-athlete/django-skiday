@@ -2,23 +2,26 @@
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SKIDAY Inc.</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'images/skiday_in_mountain.png' %}">
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css" rel="stylesheet" />
-    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{% static 'images/skiday_in_mountain.png' %}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+  </head>
+  <body>
     {% include 'navbar.html' %}
-    <div class="max-w-7xl mx-auto">
-        {% block content %}
-        {% endblock %}
-    </div>
+    <div>{% block content %} {% endblock %}</div>
     {% include 'footer.html' %}
-<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+  </body>
 </html>
-
