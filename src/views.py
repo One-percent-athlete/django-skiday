@@ -1,7 +1,20 @@
 from django.shortcuts import render
+from django.contrib import messages
+
 
 
 def home_en(request):
+
+    if request.method == "POST":
+        name = request.POST["name"]
+        email = request.POST["email"]
+        company = request.POST["company"]
+        message = request.POST["message"]
+
+        print(name)
+
+        messages.success(request, 'Thank you for reaching out, we will come back to you later.')
+
     return render(request, 'home_en.html')
 
 
