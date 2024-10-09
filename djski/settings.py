@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1', "web-production-f337.up.railway.app", "https://web-production-f337.up.railway.app"]
 CSRF_TRUSTED_ORIGINS=["https://web-production-f337.up.railway.app"]
 
@@ -85,12 +85,11 @@ WSGI_APPLICATION = 'djski.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': os.environ.get('DBPASSWORD'),
-        'HOST': 'autorack.proxy.rlwy.net',
-        'PORT': '51963',
+        'HOST': 'junction.proxy.rlwy.net',
+        'PORT': '59280',
     }
 }
 
