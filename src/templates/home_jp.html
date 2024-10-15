@@ -1,468 +1,110 @@
-{% extends 'base.html' %} {% load static %} {% block content %}
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
 
-<section>
-  <div id="default-carousel" class="relative w-full" data-carousel="slide">
-    <!-- Carousel wrapper -->
-    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-      <!-- Item 1 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img
-          src="{% static 'images/home/carousel1.jpg' %}"
-          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-          alt="..."
-        />
-        <div class="carousel-caption text-start">
-          <h1>Why us</h1>
-          <p>
-            We offer you the opportunity to have the "best experience" in snow
-            resorts.
-          </p>
-        </div>
-      </div>
-      <!-- Item 2 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img
-          src="{% static 'images/home/carousel2.jpg' %}"
-          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-          alt="..."
-        />
-        <div class="carousel-caption text-start">
-          <h1>Why us</h1>
-          <p>
-            We offer you the opportunity to have the "best experience" in snow
-            resorts.
-          </p>
-        </div>
-      </div>
-      <!-- Item 3 -->
-      <div class="hidden duration-700 ease-in-out" data-carousel-item>
-        <img
-          src="{% static 'images/home/carousel3.jpg' %}"
-          class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-          alt="..."
-        />
-        <div class="carousel-caption text-start">
-          <h1>Why us</h1>
-          <p>
-            We offer you the opportunity to have the "best experience" in snow
-            resorts.
-          </p>
-        </div>
-      </div>
+<!-- sky-200 blue-300 gray-900 slate-800 -->
+
+<section class="relative isolate overflow-hidden bg-gray-900">
+  <img src="{% static 'images/home/home_bg.jpg' %}" alt=""
+    class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+  <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+    aria-hidden="true">
+    <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+      style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
     </div>
-    <!-- Slider indicators -->
-    <div
-      class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
-    >
-      <button
-        type="button"
-        class="w-3 h-3 rounded-full"
-        aria-current="true"
-        aria-label="Slide 1"
-        data-carousel-slide-to="0"
-      ></button>
-      <button
-        type="button"
-        class="w-3 h-3 rounded-full"
-        aria-current="false"
-        aria-label="Slide 2"
-        data-carousel-slide-to="1"
-      ></button>
-      <button
-        type="button"
-        class="w-3 h-3 rounded-full"
-        aria-current="false"
-        aria-label="Slide 3"
-        data-carousel-slide-to="2"
-      ></button>
+  </div>
+  <div
+    class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+    aria-hidden="true">
+    <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+      style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
     </div>
-    <!-- Slider controls -->
-    <button
-      type="button"
-      class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-      data-carousel-prev
-    >
-      <span
-        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-      >
-        <svg
-          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 6 10"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M5 1 1 5l4 4"
-          />
-        </svg>
-        <span class="sr-only">Previous</span>
-      </span>
-    </button>
-    <button
-      type="button"
-      class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-      data-carousel-next
-    >
-      <span
-        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-      >
-        <svg
-          class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 6 10"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="m1 9 4-4-4-4"
-          />
-        </svg>
-        <span class="sr-only">Next</span>
-      </span>
-    </button>
   </div>
 
-  <div class="text-center">
-    <h5 class="text-xl text-start p-5">
-      SKIDAY will provide a mechanism and information that will enable snow
-      resorts and skiers/snowboarders to fully enjoy blessed natural
-      environment, thereby revitalizing the snow industry, facilitate travel and
-      tourism and local economies related to experiential nature learning.
-    </h5>
-    <button
-      class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-slate-900 text-white hover:bg-slate-700"
-    >
-      <a href="{% url 'info' %}">Click To Know More...</a>
-    </button>
-  </div>
-</section>
-
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col">
-      <div class="h-1 bg-gray-200 rounded overflow-hidden"></div>
-      <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-        <h1
-          class="sm:w-2/5 text-gray-900 font-medium title-font text-3xl mb-2 sm:mb-0"
-        >
-          Our Services
-        </h1>
+  <section class="body-font">
+    <div class="container mx-auto flex px-5 lg:pt-24 max-sm:pt-8 sm:pt-16 md:pt-24 md:flex-row flex-col items-center">
+      <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+        <div>
+          <h1 class="mb-4 text-5xl font-extrabold tracking-tight leading-none text-slate-800 md:text-7xl lg:text-8xl">
+            SKIDAY
+          </h1>
+        </div>
+        <p
+          class="mb-8 font-bold text-slate-800 sm:text-2xl md:text-3xl lg:text-4xl max-sm:px-16 sm:px-24 md:px-32 lg:px-48">
+          Our vision is to increase the probability of achieving "The Day" for skiers and snowboarders.</p>
+        </p>
       </div>
     </div>
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img
-            alt="content"
-            class="object-cover object-center h-full w-full"
-            src="{% static 'images/home/powderalert.jpg' %}"
-          />
-        </div>
-        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
-          Powder Alert
-        </h2>
-        <p class="text-base leading-relaxed mt-2">
-          Lastest snow news, Access from anywhere, Quick and easy, Snow news
-          email delivery service for outdoor activities
-        </p>
-        <a
-          href="{% url 'powderalert' %}"
-          class="text-blue-500 inline-flex items-center mt-3"
-          >Learn More
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-4 h-4 ml-2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-6 md:px-8 max-sm:pt-24 sm:pt-16 md:pt-24 lg:pt-24 xl:pt-48">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-4xl font-bold tracking-tight text-slate-800 sm:text-6xl"><a href="{% url 'mtcam' %}"
+          class="text-slate-800 hover:text-blue-300 transition-all duration-500">Mt. Cam &nbsp;➔</a>
+      </h2>
+      <p class="mt-6 text-xl leading-8 font-semibold text-gray-900">Live camera for snowfall and ski resorts operation
+      </p>
+    </div>
+    <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+      <div
+        class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-xl text-gray-900 sm:grid-cols-2 md:flex lg:gap-x-10">
+        <a href="https://docsend.com/view/cpbn728mqz66nx3c"
+          class="text-2xl transition-all duration-500 hover:text-blue-300">Check
+          our PDF<span aria-hidden="true">&rarr;</span></a>
+        <a href="https://docsend.com/view/r55v6g2bie8tj8kx"
+          class="transition-all duration-500 hover:text-blue-300 text-2xl">Check
+          our Video<span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-7xl px-6 md:px-8 max-sm:pt-24 sm:pt-16 md:pt-24 lg:pt-24 xl:pt-48">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-4xl font-bold tracking-tight text-slate-800 sm:text-6xl"><a href="{% url 'powderalert' %}"
+          class="text-slate-800 hover:text-blue-300 transition-all duration-500">Powder Alert &nbsp;➔</a>
+      </h2>
+      <p class="mt-6 text-xl font-semibold leading-8 text-gray-900">Get the latest snow information update and snowfall
+        notification</p>
+    </div>
+    <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+      <div
+        class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-xl text-gray-900 sm:grid-cols-2 md:flex lg:gap-x-10">
+        <p class="text-2xl font-bolder mt-1">DOWNLOAD</p>
+        <a href="http://bit.ly/3Yjm8Hu" class="transition-all duration-500 hover:text-blue-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-google-play"
+            viewBox="0 0 16 16">
+            <path
+              d="M14.222 9.374c1.037-.61 1.037-2.137 0-2.748L11.528 5.04 8.32 8l3.207 2.96zm-3.595 2.116L7.583 8.68 1.03 14.73c.201 1.029 1.36 1.61 2.303 1.055zM1 13.396V2.603L6.846 8zM1.03 1.27l6.553 6.05 3.044-2.81L3.333.215C2.39-.341 1.231.24 1.03 1.27" />
           </svg>
         </a>
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img
-            alt="content"
-            class="object-cover object-center h-full w-full"
-            src="{% static 'images/home/mtcam.png' %}"
-          />
-        </div>
-        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
-          Mt. CAM
-        </h2>
-        <p class="text-base leading-relaxed mt-2">
-          Wireless, Reasonable, Functional, Mobile live camera service for
-          outdoor facilities
-        </p>
-        <button class="btn btn-outline-light my-2 col-3" type="button">
-          <a href="https://docsend.com/view/r55v6g2bie8tj8kx" class="nav-link"
-            >PDF</a
-          >
-        </button>
-        <button class="btn btn-outline-light col-3" type="button">
-          <a href="https://docsend.com/view/cpbn728mqz66nx3c" class="nav-link"
-            >Video</a
-          ></button
-        ><br />
-        <a
-          href="{% url 'mtcam' %}"
-          class="text-blue-500 inline-flex items-center mt-3"
-          >Learn More
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-4 h-4 ml-2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-          </svg>
-        </a>
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img
-            alt="content"
-            class="object-cover object-center h-full w-full"
-            src="{% static 'images/home/matching.jpg' %}"
-          />
-        </div>
-        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">
-          Guide Matching
-        </h2>
-        <p class="text-base leading-relaxed mt-2">
-          Making friends, Fun and easy, Improving skills, Matching service for
-          snow mountain lovers, Coming soon...
-        </p>
-        <a
-          href="https://matching.skiday.co.jp/"
-          class="text-blue-500 inline-flex items-center mt-3"
-          >Learn More
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            class="w-4 h-4 ml-2"
-            viewBox="0 0 24 24"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
+        <a href="https://apple.co/3JILjyX" class="transition-all duration-500 hover:text-blue-300">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-apple"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
+            <path
+              d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282" />
           </svg>
         </a>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col">
-      <div class="h-1 bg-gray-200 rounded overflow-hidden"></div>
-      <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-        <h1
-          class="sm:w-2/5 text-gray-900 font-medium title-font text-3xl mb-2 sm:mb-0"
-        >
-          Features
-        </h1>
-      </div>
+  <section class="mx-auto max-w-7xl px-6 md:px-8 max-sm:py-24 sm:py-16 md:py-24 lg:py-24 xl:py-48">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-4xl font-bold tracking-tight text-slate-800 sm:text-6xl"><a href="#"
+          class="text-slate-800 hover:text-blue-300 transition-all duration-500">Guide Matching &nbsp;➔</a>
+      </h2>
+      <p class="mt-6 text-xl leading-8 text-gray-900">Coming soon...
+      </p>
     </div>
-    <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-      <h1
-        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
-      >
-        Awards
-      </h1>
-    </div>
-    <div
-      class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
-    >
-      <div class="p-4 md:w-1/3 flex">
-        <div class="flex-grow pl-6">
-          <img src="{% static 'images/feature/award1.webp' %}" />
-          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
-            Shinsyu Venture Summit
-          </h2>
-          <h4 class="text-lg">Grand Prix</h4>
-          <p>
-            Winner of the Grand Prix at Nagano Prefecture's Largest Business
-            Presentation Contest (Sponsored by Nagano Prefecture, January 2022)
-          </p>
-        </div>
+    <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+      <div
+        class="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-xl text-gray-900 sm:grid-cols-2 md:flex lg:gap-x-10">
+        <a href="https://docsend.com/view/r55v6g2bie8tj8kx" class="transition-all duration-500 hover:text-blue-300">Join
+          Our Community<span aria-hidden="true">&rarr;</span></a>
       </div>
-      <div class="p-4 md:w-1/3 flex">
-        <div class="flex-grow pl-6">
-          <img src="{% static 'images/feature/award2.webp' %}" />
-          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
-            G-CHALLENGE 2018
-          </h2>
-          <h4 class="text-lg">Grand Prize</h4>
-          <p>
-            Winner of the Grand Prize in the Business Plan Contest for current
-            students and graduates sponsored by the Graduate School of
-            Management, Globis University (October 2018)
-          </p>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3 flex">
-        <div class="flex-grow pl-6">
-          <img src="{% static 'images/feature/award3.webp' %}" />
-          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
-            4th Hokuriku Business Plan Contest
-          </h2>
-          <h4 class="text-lg">Judges' Special Prize</h4>
-          <p>
-            Contest sponsored by Toyama Prefecture to support entrepreneurs
-            aiming for further advancement. Applications are accepted nationwide
-            (Toyama Prefecture & Toyama City support, April 2022)
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container px-5 pb-24 mx-auto">
-    <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-      <h1
-        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
-      >
-        Acceleration Program Adopted
-      </h1>
-    </div>
-    <div
-      class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
-    >
-      <div class="p-4 md:w-1/3 flex">
-        <div class="flex-grow pl-6">
-          <img src="{% static 'images/feature/award4.webp' %}" />
-          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
-            Shido2020
-          </h2>
-          <h4 class="text-lg">
-            Sponsored by Ministry of Economy, Trade and Industry
-          </h4>
-          <p>
-            The program was adopted by the Global Entrepreneurship Development
-            Program to foster the next generation of innovators, and we have
-            completed the 6-month program. (2020)
-          </p>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3 flex">
-        <div class="flex-grow pl-6">
-          <img src="{% static 'images/feature/award5.webp' %}" />
-          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
-            Aoyama Startup Acceleration Center
-          </h2>
-          <h4 class="text-lg">Sponsored by Tokyo Metropolitan Government</h4>
-          <p>
-            We were selected for a facility and program to incubate early-stage
-            startups and received support for approximately 5 months. (2020)
-          </p>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3 flex">
-        <div class="flex-grow pl-6">
-          <img src="{% static 'images/feature/award6.webp' %}" />
-          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
-            Shinshu Acceleration Program
-          </h2>
-          <h4 class="text-lg">Sponsored by Nagano Prefecture</h4>
-          <p>
-            This is a short-term intensive support program for start-up
-            companies operating in Nagano Prefecture. Support was provided for
-            approximately 3 months. (2021)
-          </p>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3 flex">
-        <div class="flex-grow pl-6">
-          <img src="{% static 'images/feature/award7.webp' %}" />
-          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
-            Local Innovation Challenge Hokkaido
-          </h2>
-          <h4 class="text-lg">Hosted by Sapporo City, Hokkaido</h4>
-          <p>
-            We have been selected for the Administrative Open Innovation
-            Project, which aims to solve administrative issues in collaboration
-            with the City of Sapporo and 12 neighboring municipalities, and have
-            been given the opportunity to conduct a demonstration experiment.
-            (2022)
-          </p>
-        </div>
-      </div>
-      <div class="p-4 md:w-1/3 flex">
-        <div class="flex-grow pl-6">
-          <img src="{% static 'images/feature/award8.webp' %}" />
-          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
-            Nexs Tokyo
-          </h2>
-          <h4 class="text-lg">Sponsored by Tokyo Metropolitan Government</h4>
-          <p>
-            We have been selected as a member company of a project sponsored by
-            the Tokyo Metropolitan Government that links venture companies
-            nationwide with people, information, and organizations working to
-            promote innovation. (2020)
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container px-5 pb-24 mx-auto">
-    <div class="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-      <h1
-        class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900"
-      >
-        Business partnership
-      </h1>
-    </div>
-    <div
-      class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6"
-    >
-      <div class="p-4 md:w-1/3 flex">
-        <div class="flex-grow pl-6">
-          <img src="{% static 'images/feature/partner1.webp' %}" />
-          <h2 class="text-xl text-gray-900 font-medium title-font mb-2">
-            Nagano JA Bank, Nagano Prefectural Shinren
-          </h2>
-          <h4 class="text-lg">Business Matching Partnership</h4>
-          <p>
-            We have formed an alliance to utilize the nationwide JA Bank Group
-            network to assist us in developing our sales channels and together
-            we will contribute to regional development. (2022)
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="flex flex-col">
-    <div class="h-1 bg-gray-200 rounded overflow-hidden"></div>
-    <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
-      <h1
-        class="sm:w-2/5 text-gray-900 font-medium title-font text-3xl mb-2 sm:mb-0"
-      >
-        Contact Us
-      </h1>
-    </div>
-  </div>
-
-  {% include 'contact.html' %}
+  </section>
 </section>
 
 {% endblock %}

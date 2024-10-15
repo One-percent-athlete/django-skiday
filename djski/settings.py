@@ -18,8 +18,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = ['127.0.0.1', "web-production-f337.up.railway.app", "https://web-production-f337.up.railway.app"]
-CSRF_TRUSTED_ORIGINS=["https://web-production-f337.up.railway.app"]
+ALLOWED_HOSTS = ['127.0.0.1', "django-skiday-main-production.up.railway.app", "https://django-skiday-main-production.up.railway.app"]
+CSRF_TRUSTED_ORIGINS=["https://django-skiday-main-production.up.railway.app"]
 
 
 
@@ -76,9 +76,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': os.environ.get('DBPASSWORD'),
+        'PASSWORD': "uUcQsQedgfHNzhDEEkOOPYLwuhlALucv",
         'HOST': 'junction.proxy.rlwy.net',
-        'PORT': '59280',
+        'PORT': '52615',
     }
 }
 
